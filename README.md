@@ -184,7 +184,15 @@ Contributions are welcome, especially around:
 
 ---
 
-## 📜 License
+## Authors
 
-Engine crates currently declare `MIT OR Apache-2.0` in their manifests.
-If you plan to publish this repo as-is, add a root `LICENSE` file to make licensing explicit for the full project.
+**Mahesh Chandra Teja Garnepudi**  
+**Sagarika Srivastava**  
+
+Built at **Kairais Tech**
+
+---
+
+## License
+
+Private project for now. Licensing details will be published later.
