@@ -1,0 +1,61 @@
+# =========================
+# OS / Filesystem noise
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# =========================
+# Editors / IDEs
+# =========================
+.vs/
+.vscode/
+.idea/
+*.code-workspace
+
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+*.swp
+*.swo
+*~
+
+# =========================
+# .NET / Visual Studio / Avalonia
+# =========================
+**/bin/
+**/obj/
+TestResults/
+artifacts/
+publish/
+
+*.cache
+*.pdb
+*.ipdb
+*.iobj
+*.ilk
+*.tlog
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# =========================
+# Rust
+# =========================
+**/target/
+
+# =========================
+# Local env / logs
+# =========================
+.env
+.env.*
+*.log
