@@ -1,0 +1,15 @@
+﻿[package]
+name = "hb_cli"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Aevrix headless render harness (HTML -> RGBA/PNG)."
+repository = "https://example.com/aevrix"
+[dependencies]
+anyhow = { workspace = true }
+clap = { version = "4", features = ["derive"] }
+png = "0.17"
+hb_css = { path = "../hb_css" }
+hb_html = { path = "../hb_html" }
+hb_layout = { path = "../hb_layout" }
+hb_graphics = { path = "../hb_graphics" }

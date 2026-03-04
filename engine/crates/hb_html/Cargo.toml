@@ -1,0 +1,16 @@
+﻿[package]
+name = "hb_html"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Aevrix HTML tokenizer + tree builder (deterministic subset, no scripting)."
+repository = "https://example.com/aevrix"
+[features]
+default = ["std"]
+std = []
+deterministic = []
+[dependencies]
+thiserror = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+smallvec = { workspace = true }

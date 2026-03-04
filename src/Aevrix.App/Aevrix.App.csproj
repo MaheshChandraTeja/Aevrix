@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>partial</TrimMode>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+
+    
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <DebugType>portable</DebugType>
+
+    
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    
+    <PackageReference Include="Avalonia" Version="11.0.6" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.6" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.6" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.6" />
+  </ItemGroup>
+
+  
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    
+    <None Include="..\..\engine\target\release\hb_ffi.dll"
+          Condition="'$(OS)' == 'Windows_NT'"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\engine\target\release\libhb_ffi.so"
+          Condition="'$(OS)' != 'Windows_NT' and '$(RuntimeIdentifier)' != ''"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\engine\target\release\libhb_ffi.dylib"
+          Condition="'$(OS)' != 'Windows_NT' and '$(RuntimeIdentifier)' == ''"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AvaloniaXaml Include="**\*.axaml" />
+  </ItemGroup>
+
+</Project>

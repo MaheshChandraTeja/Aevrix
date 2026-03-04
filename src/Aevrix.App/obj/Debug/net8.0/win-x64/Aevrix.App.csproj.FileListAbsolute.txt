@@ -1,0 +1,2 @@
+F:\Projects-INT\Aevrix_Backup\src\Aevrix.App\obj\Debug\net8.0\win-x64\Aevrix.App.csproj.AssemblyReference.cache
+F:\Projects-INT\Aevrix_Backup\src\Aevrix.App\obj\Debug\net8.0\win-x64\Avalonia\Resources.Inputs.cache

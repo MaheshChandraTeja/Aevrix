@@ -1,0 +1,19 @@
+﻿[package]
+name = "hb_layout"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Aevrix block/inline layout + first-paint plan (deterministic)."
+repository = "https://example.com/aevrix"
+[features]
+default = ["std"]
+std = []
+deterministic = []
+[dependencies]
+thiserror = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+smallvec = { workspace = true }
+hb_css = { path = "../hb_css" }
+[dev-dependencies]
+pretty_assertions = "1.4"

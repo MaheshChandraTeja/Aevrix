@@ -1,0 +1,30 @@
+﻿[package]
+name = "hb_compositor"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Aevrix GPU compositor (wgpu) for first paint; deterministic bootstrap."
+repository = "https://example.com/aevrix"
+[features]
+default = []
+text = []
+cpu-fallback = ["hb_graphics"]
+[dependencies]
+bytemuck = { version = "1", features = ["derive"] }
+thiserror = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+smallvec = { workspace = true }
+hb_layout = { path = "../hb_layout" }
+hb_graphics = { path = "../hb_graphics", optional = true }
+wgpu = "0.20"
+pollster = "0.3"
+font8x8 = "0.3"
+[dev-dependencies]
+pretty_assertions = "1.4"
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+opt-level = "z"
+strip = true

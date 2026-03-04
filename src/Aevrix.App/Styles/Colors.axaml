@@ -1,0 +1,30 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui">
+  
+  <Color x:Key="Clr.Background">#0b0b0f</Color>
+  <Color x:Key="Clr.Panel">#181a1f</Color>
+  <Color x:Key="Clr.PanelAlt">#1f2229</Color>
+  <Color x:Key="Clr.Border">#2a2e37</Color>
+  <Color x:Key="Clr.Foreground">#e6e6e6</Color>
+  <Color x:Key="Clr.ForegroundDim">#b9b9b9</Color>
+
+  
+  <Color x:Key="Clr.Accent">#7aa2f7</Color>
+  <Color x:Key="Clr.AccentAlt">#89ddff</Color>
+  <Color x:Key="Clr.Success">#9ece6a</Color>
+  <Color x:Key="Clr.Warning">#ffcc66</Color>
+  <Color x:Key="Clr.Danger">#f7768e</Color>
+
+  
+  <SolidColorBrush x:Key="Brush.Background" Color="{StaticResource Clr.Background}"/>
+  <SolidColorBrush x:Key="Brush.Panel" Color="{StaticResource Clr.Panel}"/>
+  <SolidColorBrush x:Key="Brush.PanelAlt" Color="{StaticResource Clr.PanelAlt}"/>
+  <SolidColorBrush x:Key="Brush.Border" Color="{StaticResource Clr.Border}"/>
+  <SolidColorBrush x:Key="Brush.Foreground" Color="{StaticResource Clr.Foreground}"/>
+  <SolidColorBrush x:Key="Brush.ForegroundDim" Color="{StaticResource Clr.ForegroundDim}"/>
+
+  <SolidColorBrush x:Key="Brush.Accent" Color="{StaticResource Clr.Accent}"/>
+  <SolidColorBrush x:Key="Brush.AccentAlt" Color="{StaticResource Clr.AccentAlt}"/>
+  <SolidColorBrush x:Key="Brush.Success" Color="{StaticResource Clr.Success}"/>
+  <SolidColorBrush x:Key="Brush.Warning" Color="{StaticResource Clr.Warning}"/>
+  <SolidColorBrush x:Key="Brush.Danger" Color="{StaticResource Clr.Danger}"/>
+</ResourceDictionary>

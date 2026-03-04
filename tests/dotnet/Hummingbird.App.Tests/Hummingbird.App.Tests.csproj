@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.8.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Aevrix.App/Aevrix.App.csproj" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <None Include="../../../engine/target/release/hb_ffi.dll" Condition="'$(OS)' == 'Windows_NT'" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../../engine/target/release/libhb_ffi.so" Condition="'$(OS)' != 'Windows_NT'" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../../engine/target/release/libhb_ffi.dylib" Condition="'$(RuntimeIdentifier)' == 'osx-x64' or '$(RuntimeIdentifier)' == 'osx-arm64'" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,5 @@
+F:\Projects-INT\Aevrix\tests\dotnet\Hummingbird.App.Tests\obj\Release\net8.0\Hummingbird.App.Tests.csproj.AssemblyReference.cache
+F:\Projects-INT\Aevrix\tests\dotnet\Hummingbird.App.Tests\obj\Release\net8.0\Hummingbird.App.Tests.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects-INT\Aevrix\tests\dotnet\Hummingbird.App.Tests\obj\Release\net8.0\Hummingbird.App.Tests.AssemblyInfoInputs.cache
+F:\Projects-INT\Aevrix\tests\dotnet\Hummingbird.App.Tests\obj\Release\net8.0\Hummingbird.App.Tests.AssemblyInfo.cs
+F:\Projects-INT\Aevrix\tests\dotnet\Hummingbird.App.Tests\obj\Release\net8.0\Hummingbird.App.Tests.csproj.CoreCompileInputs.cache

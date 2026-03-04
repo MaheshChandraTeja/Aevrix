@@ -1,0 +1,60 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui">
+
+  
+  <Style Selector="Button">
+    <Setter Property="Background" Value="{DynamicResource Brush.PanelAlt}"/>
+    <Setter Property="BorderBrush" Value="{DynamicResource Brush.Border}"/>
+    <Setter Property="Foreground" Value="{DynamicResource Brush.Foreground}"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="Padding" Value="8,6"/>
+    <Setter Property="CornerRadius" Value="6"/>
+  </Style>
+
+  <Style Selector="Button:pointerover">
+    <Setter Property="Background" Value="{DynamicResource Brush.Accent}"/>
+    <Setter Property="Foreground" Value="#0b0b0f"/>
+  </Style>
+
+  
+  <Style Selector="TextBox">
+    <Setter Property="Background" Value="{DynamicResource Brush.PanelAlt}"/>
+    <Setter Property="BorderBrush" Value="{DynamicResource Brush.Border}"/>
+    <Setter Property="Foreground" Value="{DynamicResource Brush.Foreground}"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="CornerRadius" Value="6"/>
+    <Setter Property="Padding" Value="8,6"/>
+    <Setter Property="CaretBrush" Value="{DynamicResource Brush.Accent}"/>
+    <Setter Property="SelectionBrush" Value="#336699ff"/>
+  </Style>
+
+  
+  <Style Selector="TabControl">
+    <Setter Property="Background" Value="{DynamicResource Brush.Panel}"/>
+  </Style>
+
+  <Style Selector="TabItem">
+    <Setter Property="Padding" Value="10,6"/>
+    <Setter Property="Background" Value="{DynamicResource Brush.PanelAlt}"/>
+    <Setter Property="Foreground" Value="{DynamicResource Brush.ForegroundDim}"/>
+    <Setter Property="BorderBrush" Value="{DynamicResource Brush.Border}"/>
+    <Setter Property="BorderThickness" Value="0,0,1,0"/>
+  </Style>
+
+  <Style Selector="TabItem:selected">
+    <Setter Property="Foreground" Value="{DynamicResource Brush.Foreground}"/>
+    <Setter Property="Background" Value="{DynamicResource Brush.Background}"/>
+    <Setter Property="BorderThickness" Value="0,0,2,0"/>
+    <Setter Property="BorderBrush" Value="{DynamicResource Brush.Accent}"/>
+  </Style>
+
+  
+  <Style Selector="Window">
+    <Setter Property="Background" Value="{DynamicResource Brush.Background}"/>
+  </Style>
+
+  
+  <Style Selector="TextBlock">
+    <Setter Property="Foreground" Value="{DynamicResource Brush.Foreground}"/>
+  </Style>
+
+</ResourceDictionary>

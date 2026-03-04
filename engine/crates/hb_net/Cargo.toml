@@ -1,0 +1,17 @@
+﻿[package]
+name = "hb_net"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Aevrix network stub (deterministic/offline loader surface)."
+repository = "https://example.com/aevrix"
+[features]
+default = ["offline"]
+offline = []
+[dependencies]
+thiserror = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+url = { workspace = true }
+base64 = { workspace = true }
+sha2 = { workspace = true }

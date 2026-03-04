@@ -1,0 +1,42 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:Aevrix.App.Views"
+        x:Class="Aevrix.App.Views.ShellView"
+        Width="1024" Height="700"
+        Title="Aevrix"
+        TransparencyLevelHint="None"
+        CanResize="True">
+
+  <Grid RowDefinitions="Auto,*">
+    
+    <StackPanel Orientation="Horizontal" Margin="8" Spacing="6">
+      <Button Content="New Tab" Click="OnNewTabClick"/>
+      <Button Content="Close Tab" Click="OnCloseTabClick"/>
+      <Button Content="Refresh" Click="OnRefreshClick"/>
+      <TextBox x:Name="AddressBox" Watermark="Type HTML or a URL…" Width="600"
+               KeyDown="OnAddressKeyDown"/>
+      <TextBlock Margin="8,0,0,0" VerticalAlignment="Center"
+                 Text="{Binding SelectedTitle, Mode=OneWay}"/>
+    </StackPanel>
+
+    
+    <TabControl Grid.Row="1"
+                x:Name="Tabs"
+                Items="{Binding Tabs}"
+                SelectedItem="{Binding SelectedTab}">
+      <TabControl.ItemTemplate>
+        <DataTemplate>
+          <StackPanel Orientation="Horizontal" Spacing="6">
+            <TextBlock Text="{Binding Title}" />
+          </StackPanel>
+        </DataTemplate>
+      </TabControl.ItemTemplate>
+
+      <TabControl.ContentTemplate>
+        <DataTemplate>
+          <views:TabView/>
+        </DataTemplate>
+      </TabControl.ContentTemplate>
+    </TabControl>
+  </Grid>
+</Window>

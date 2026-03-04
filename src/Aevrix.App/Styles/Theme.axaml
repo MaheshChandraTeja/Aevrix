@@ -1,0 +1,6 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui">
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="avares://Hummingbird.App/Styles/Colors.axaml" />
+    <ResourceDictionary Source="avares://Hummingbird.App/Styles/Controls.axaml" />
+  </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

@@ -1,0 +1,19 @@
+﻿[package]
+name = "hb_css"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Aevrix CSS parser, selectors, and cascade (deterministic subset)."
+repository = "https://example.com/aevrix"
+[features]
+default = ["std"]
+trace_css = []
+std = []
+deterministic = []
+[dependencies]
+thiserror = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+smallvec = { workspace = true }
+[dev-dependencies]
+pretty_assertions = "1.4"
